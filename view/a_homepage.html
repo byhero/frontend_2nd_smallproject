@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="text-center">
+            <img src="../public/SF.png" alt="SF" width="10%" class="center">
+        </div>
+        <div class="text-right">
+            <button type="button">LOGIN</button> 
+            <a class="btn btn-primary" href="a_signup" role="button">Sign up</a>
+        </div>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-between">
+            <ul class="navbar-nav">
+                <a class="navbar-brand" href="#">Sports Friends</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="/a_homepage">HOME</a>                    
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/a_notice">상품소개</a>                    
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">매장안내</a>                    
+                </li>             
+                <li class="nav-item">
+                    <a class="nav-link" href="#">프리미엄존</a>                                        
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">고객서비스</a>                    
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">플레이어</a>                    
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">회사소개</a>                    
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">추천코너</a>                    
+                </li>                                
+            </ul>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </nav>        
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../public/sports.jpg" alt="sports" width="90%" height="620px">
+                <div class="carousel-caption"></div>
+            </div>
+            <div class="carousel-item active">
+                <div class="dropdown float-right">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        최근 본 상품
+                    </a>                          
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <img src="../public/racket01.jpg" width="70%">
+                        <div>NANOFLARE 700</div>
+                        <img src="../public/racket02.jpg" width="70%">
+                        <div>ASTROX 88 D</div>
+                        <img src="../public/racket03.jpg" width="70%">
+                        <div>ASTROX 88 S</div>
+                        <img src="../public/racket04.jpg" width="70%">
+                        <div>DUORA 10</div>
+                    </div>
+                </div>
+                <div class="carousel-caption"></div>
+            </div>
+        </div>        
+    </body>
+</html>
