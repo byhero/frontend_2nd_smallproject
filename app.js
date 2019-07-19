@@ -13,5 +13,13 @@ router.get('/', function (req, res) {
 });
 
 
+router.get('/b_homepage', function (req, res) {
+    res.sendFile(path.join(__dirname + '/view/b_homepage.html'));
+});
+
+router.get('/b_signup', function (req, res) {
+    res.sendFile(path.join(__dirname + '/view/b_signup.html'));
+});
+
 app.use('/', router);
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
