@@ -8,12 +8,32 @@
     </head>
     <body>
         <div class="text-center">
-            <img src="../public/SF.png" alt="SF" width="10%" class="center">
+            <img src="./SF.png" alt="SF" width="10%" class="center">
         </div>
         <div class="text-right">
-            <button type="button">LOGIN</button> 
+            <button type="button" data-toggle="modal" data-target="#Modal_signin" class="btn-primary">Sign in</button> 
             <a class="btn btn-primary" href="a_signup" role="button">Sign up</a>
         </div>
+        <form action="signin" class="form">
+        <div class="modal fade" id="Modal_signin">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-center">Sign in</h4>
+                        <div class="text-center"><img src="./SF.png" width="50%"></div>
+                        <button type="submit" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="text" class="form-control" placeholder="ID" aria-label="ID" aria-describedby="id" name="id">
+                        <input type="password" class="form-control" placeholder="PASSWORD" aria-label="PASSWORD" aria-describedby="pwd" name="pwd">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </form>
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-between">
             <ul class="navbar-nav">
                 <a class="navbar-brand" href="#">Sports Friends</a>
@@ -42,14 +62,14 @@
                     <a class="nav-link" href="#">추천코너</a>                    
                 </li>                                
             </ul>
-            <form class="form-inline">
+            <form action="/homepage_search" class="form-inline">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </nav>        
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../public/sports.jpg" alt="sports" width="90%" height="620px">
+                <img src="./sports.jpg" alt="sports" width="90%" height="620px">
                 <div class="carousel-caption"></div>
             </div>
             <div class="carousel-item active">
@@ -58,18 +78,26 @@
                         최근 본 상품
                     </a>                          
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <img src="../public/racket01.jpg" width="70%">
+                        <img src="./racket01.jpg" width="70%">
                         <div>NANOFLARE 700</div>
-                        <img src="../public/racket02.jpg" width="70%">
+                        <img src="./racket02.jpg" width="70%">
                         <div>ASTROX 88 D</div>
-                        <img src="../public/racket03.jpg" width="70%">
+                        <img src="./racket03.jpg" width="70%">
                         <div>ASTROX 88 S</div>
-                        <img src="../public/racket04.jpg" width="70%">
+                        <img src="./racket04.jpg" width="70%">
                         <div>DUORA 10</div>
                     </div>
                 </div>
                 <div class="carousel-caption"></div>
             </div>
-        </div>        
+        </div>
+        <form action="/homepage_search02" class="form">
+            <div class="input-group">
+                <input class="form-control" type="search02" placeholder="라켓 보증서 확인코드(ex.0000-0000-0000-0000)" aria-label="Search02" name="search02">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-info" type="submit">Search</button>
+                </div>
+            </div>
+        </form>        
     </body>
 </html>

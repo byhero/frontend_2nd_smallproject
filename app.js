@@ -25,6 +25,18 @@ router.get('/homepage_search', function (req, res) {
     console.log(req.query);
     res.send('Request parameters : '+req.query.search)
 });
+router.get('/homepage_search02', function (req, res) {
+    console.log(req.query);
+    res.send('Request parameters : '+req.query.search02)
+});
+router.get('/notice_search', function (req, res) {
+    console.log(req.query);
+    res.send('Request parameters : '+req.query.search)
+});
+router.get('/signup_search', function (req, res) {
+    console.log(req.query);
+    res.send('Request parameters : '+req.query.search)
+});
 router.get('/notice_question', function (req, res) {
     console.log(req.query);
     res.send('Request parameters : '+req.query.question)
@@ -36,6 +48,10 @@ router.get('/notice_write', function (req, res) {
 router.get('/signup', function (req, res) {
     console.log(req.query);
     res.send('Request parameters : '+req.query.name+', '+req.query.birth+','+req.query.id+','+req.query.pwd+','+req.query.email)
+});
+router.get('/signin', function (req, res) {
+    console.log(req.query);
+    res.send('Request parameters : '+req.query.id+','+req.query.pwd)
 });
 
 
