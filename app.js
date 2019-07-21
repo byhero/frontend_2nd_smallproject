@@ -45,7 +45,7 @@ router.get('/notice_write', function (req, res) {
     console.log(req.query);
     res.send('Request parameters : '+req.query.write)
 });
-router.get('/signup', function (req, res) {
+router.get('/a_homepage', function (req, res) {
     console.log(req.query);
     res.send('Request parameters : '+req.query.name+', '+req.query.birth+','+req.query.id+','+req.query.pwd+','+req.query.email)
 });
